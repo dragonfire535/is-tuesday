@@ -1,0 +1,9 @@
+node_modules/
+package-lock.json
+logs/
+*.log
+.github/
+.gitignore
+.gitattributes
+.travis.yml
+test.js
