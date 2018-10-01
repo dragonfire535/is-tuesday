@@ -1,6 +1,6 @@
 {
 	"name": "is-tuesday",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Determines if today is Tuesday or not.",
 	"main": "index.js",
 	"scripts": {
