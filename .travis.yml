@@ -4,10 +4,4 @@ node_js:
   - '6'
   - '8'
   - '10'
-before_script: PATH=$(npm bin):$PATH
-script:
-  - npm run lint
-  - npm test
-cache:
-  directories:
-    'node_modules'
+install: npm i -g eslint eslint-config-amber eslint-plugin-json jest

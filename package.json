@@ -4,7 +4,7 @@
 	"description": "Determines if today is Tuesday or not.",
 	"main": "index.js",
 	"scripts": {
-		"test": "jest",
+		"test": "npm run lint && jest",
 		"lint": "eslint . --ext .js --ext .json"
 	},
 	"repository": {
@@ -26,21 +26,13 @@
 	"devDependencies": {
 		"eslint": "^5.5.0",
 		"eslint-config-amber": "^1.1.0",
-		"eslint-plugin-jest": "^21.24.0",
 		"eslint-plugin-json": "^1.2.1",
 		"jest": "^23.6.0"
 	},
 	"eslintConfig": {
-		"extends": [
-			"amber",
-			"plugin:jest/recommended"
-		],
+		"extends": "amber",
 		"plugins": [
-			"json",
-			"jest"
-		],
-		"env": {
-			"jest/globals": true
-		}
+			"json"
+		]
 	}
 }

@@ -1,4 +1,6 @@
-const isTuesday = require('./');
+/* global test expect */
+
+const isTuesday = require('./index');
 
 test('returns if today is tueday', () => {
 	const day = new Date().getDay();
@@ -9,7 +11,6 @@ test('uses UTC offset to determine if today is tuesday', () => {
 	const date = new Date();
 	for (let offset = 0; offset < 24; offset++) {
 		date.setUTCHours(offset);
-
 		const day = date.getDay();
 		expect(isTuesday(offset)).toEqual(day === 3);
 	}
