@@ -4,8 +4,8 @@
 	"description": "Determines if today is Tuesday or not.",
 	"main": "index.js",
 	"scripts": {
-		"test": "npx jest",
-		"lint": "npx eslint . --ext .js --ext .json"
+		"test": "jest",
+		"lint": "eslint . --ext .js --ext .json"
 	},
 	"repository": {
 		"type": "git",

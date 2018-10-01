@@ -4,7 +4,10 @@ node_js:
   - '6'
   - '8'
   - '10'
-script: npm run lint && npm test
+before_script: PATH=$(npm bin):$PATH
+script:
+  - npm run lint
+  - npm test
 cache:
   directories:
     'node_modules'
