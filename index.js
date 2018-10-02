@@ -1,5 +1,5 @@
 module.exports = (timeZoneOffset = 0) => {
-	const today = new Date();
-	today.setUTCHours(timeZoneOffset);
-	return today.getDay() === 2;
+	const rightNow = new Date();
+	rightNow.setUTCHours(timeZoneOffset);
+	return rightNow.getDay() === 2;
 };
