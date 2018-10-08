@@ -1,6 +1,6 @@
 {
 	"name": "is-tuesday",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Determines if today is Tuesday or not.",
 	"typings": "typings/index.d.ts",
 	"main": "index.js",
@@ -26,7 +26,7 @@
 	},
 	"devDependencies": {
 		"eslint": "^5.5.0",
-		"eslint-config-amber": "^1.1.0",
+		"eslint-config-amber": "^2.0.0",
 		"eslint-plugin-json": "^1.2.1",
 		"jest": "^23.6.0"
 	},
