@@ -7,6 +7,11 @@ test('today is/is not tuesday', () => {
 	expect(isTuesday()).toBe(day === 2);
 });
 
+test('today is/is not tuesday, with date object', () => {
+	const day = new Date().getDay();
+	expect(isTuesday(new Date())).toBe(day === 2);
+});
+
 test('uses UTC offset to determine if today is tuesday', () => {
 	for (let offset = 0; offset < 24; offset++) {
 		const now = new Date();
