@@ -1,6 +1,4 @@
-/* global test expect */
-
-const isTuesday = require('./index');
+const isTuesday = require('./');
 
 test('returns if today is tuesday', () => {
 	const day = new Date().getDay();
