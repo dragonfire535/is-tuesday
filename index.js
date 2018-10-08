@@ -5,7 +5,13 @@ module.exports = (options = 0) => {
 	if (typeof options !== 'number') options = Number(options);
 	if (isNaN(options)) options = 0;
 
-	const now = new Date();
-	now.setUTCHours(options);
+	let now;
+	if (options >= 0 && options < 24) {
+		now = new Date();
+		now.setUTCHours(options);
+	} else {
+		now = new Date(options);
+	}
+
 	return now.getDay() === 2;
 };
