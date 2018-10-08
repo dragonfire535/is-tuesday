@@ -2,6 +2,7 @@
 	"name": "is-tuesday",
 	"version": "1.0.2",
 	"description": "Determines if today is Tuesday or not.",
+	"typings": "typings/index.d.ts",
 	"main": "index.js",
 	"scripts": {
 		"test": "npm run lint && jest",
