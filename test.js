@@ -2,7 +2,7 @@
 
 const isTuesday = require('./index');
 
-test('returns if today is tueday', () => {
+test('returns if today is tuesday', () => {
 	const day = new Date().getDay();
 	expect(isTuesday()).toEqual(day === 2);
 });
