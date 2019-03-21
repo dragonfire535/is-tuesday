@@ -1,3 +1,3 @@
-declare function isTuesday(offset?: number): boolean;
+declare function isTuesday(options?: any): boolean;
 
 export = isTuesday;
